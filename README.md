@@ -13,6 +13,7 @@ you must set a cookie your selves with key of customerID and value of 1 for LOND
 * run `npm install`
 * run `npm run build` - builds minified code, required to run one time before runing `npm run start`
 * run `npm run start` - watches code changes front and back end side with live reaload
+* open `http://localhost:8080/` - to view the app
 * run `npm run test` - runs tests specified in test folder
 * run `npm run test:watch` - runs and watches tests specified in test folder
 * Enjoy!
