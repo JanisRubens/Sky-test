@@ -4,7 +4,7 @@ Interview Test for SKY
 
 ### EXPECTATIONS ###
 it can be assumed a cookie named customerID will be present,
-you must set a cookie your selves with key of customerID and value of 1 for LONDON and 2 for LIVERPOOL and others for UNKNOWN
+you must set a cookie your selves with key of `customerID` and value of `1`for LONDON and `2` for LIVERPOOL and others  or none for UNKNOWN( this will trigger error message of `There was a problem retrieving the customer information`)
 
 ### How do I get set up? ###
 
