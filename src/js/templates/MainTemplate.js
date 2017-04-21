@@ -18,6 +18,9 @@ export default class MainTemplate extends React.Component {
 
   render() {
 //{React.cloneElement({...this.props}.children, {...this.props})} If we need to clone current props to children
+      if (this.props.user.details.location === "UNKNOWN") {
+        return <h2>There was a problem retrieving the customer information</h2>
+      }
       return (
         <div>
           <Header {...this.props}/>
