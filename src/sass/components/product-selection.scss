@@ -1,0 +1,68 @@
+/* Mobile First Media Queries */
+
+/* Base style */
+.main-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.row .column.column-33{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.column {
+    min-height: 250px;
+
+    &:nth-child(2) {
+        border: 1px solid lightgrey
+    }
+    
+}
+
+#checkout {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header, footer {
+    background: lightskyblue;
+    height: 60px;
+}
+
+/* Larger than mobile screen */
+@media (min-width: 40.0rem) { 
+    .row .column.column-33{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+/* Larger than tablet screen */
+@media (min-width: 80.0rem) {
+
+    .row .column.column-33{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+
+}
+
+/* Larger than desktop screen */
+@media (min-width: 120.0rem) {
+    .main-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .row .column.column-33{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+
+    .column {
+        min-height: 350px;
+    }
+}

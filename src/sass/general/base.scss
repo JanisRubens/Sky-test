@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+  font-size: ($base-font-size / 16px) * 1em;
+  line-height: $base-line-height / $base-font-size;
+  overflow-y: scroll;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: $color-primary-text;
+  background-color: $color-icon-text;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+h1, h2, h3, h4, h5, h6,
+blockquote, p, address,
+hr,
+table,
+fieldset, figure,
+pre,
+%margin-bottom {
+  margin-bottom: $base-spacing-unit;
+  margin-bottom: ($base-spacing-unit / $base-font-size) * 1rem;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+article, aside, footer, form, header, main, nav, pre, section {
+    position: relative;
+}
+
+.main-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+}
+
+//STICKY FOOTER;
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}
+.site-footer {
+  background: orange;
+}

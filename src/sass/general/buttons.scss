@@ -1,0 +1,17 @@
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 40px;
+    color: white;
+    transition: 300ms ease-in-out;
+    box-shadow: 0px 4px 20px $color-primary;
+    font-size: 22px;
+    margin: 50px 2.6%;
+    background: $color-call-to-action;
+    border-bottom: 3px solid $color-primary;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0px 2px 20px $color-call-to-action;
+        }
+}

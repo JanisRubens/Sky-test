@@ -1,0 +1,59 @@
+/**
+ * Fonts
+ */
+
+// @font-face {
+//   font-family: "Reef";
+//   src: url("../fonts/Reef.otf");
+// }
+
+
+// $primary-font-family: "Reef", Arial, sans-serif;
+
+// h1, h2, h3,
+// h4, h5, h6,
+// p, a, span {
+//   font-family: "Reef";
+//   font-weight: normal;
+//   margin-top: 0;
+// }
+
+h1 {
+  @include font-size(54px);
+}
+
+h2 {
+  @include font-size(46px, 56/46);
+}
+
+h3 {
+  @include font-size(38px, 44/38);
+}
+
+h4 {
+  @include font-size(24px, 29/24);
+}
+
+h5 {
+  @include font-size(20px);
+}
+
+h6 {
+  @include font-size(16px);
+}
+
+.p1 {
+  @include font-size(18px, 28/18);
+}
+
+.p2 {
+  @include font-size(16px, 26/16);
+}
+
+.p3 {
+  @include font-size(14px, 24/14);
+}
+
+.p4 {
+  @include font-size(12px, 22/12);
+}
